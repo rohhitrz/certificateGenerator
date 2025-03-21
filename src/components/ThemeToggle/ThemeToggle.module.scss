@@ -1,0 +1,55 @@
+.themeToggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+  background-color: var(--card-background);
+  border-radius: 20px;
+  padding: 0.35rem;
+  position: relative;
+  box-shadow: 0 2px 5px var(--shadow-color);
+  width: fit-content;
+  transition: background-color 0.3s ease;
+}
+
+.option {
+  padding: 0.5rem 0.75rem;
+  border-radius: 16px;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  opacity: 0.7;
+  z-index: 1;
+  
+  &.active {
+    opacity: 1;
+    color: #fff;
+  }
+}
+
+.slider {
+  position: absolute;
+  top: 0.3rem;
+  left: 0.3rem;
+  bottom: 0.3rem;
+  width: calc(50% - 0.3rem);
+  background-color: var(--primary-color);
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+  
+  &.right {
+    transform: translateX(100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .themeToggle {
+    margin: 0 auto;
+  }
+  
+  .option {
+    padding: 0.5rem 0.65rem;
+    font-size: 0.85rem;
+  }
+} 

@@ -1,0 +1,48 @@
+.languageSwitcher {
+  position: relative;
+  min-width: 120px;
+}
+
+.languageSelect {
+  appearance: none;
+  background-color: var(--card-background);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 0.6rem 2rem 0.6rem 1rem;
+  width: 100%;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    border-color: var(--primary-color);
+  }
+  
+  &:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+  }
+}
+
+.arrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid var(--text-color);
+}
+
+@media (max-width: 768px) {
+  .languageSwitcher {
+    width: 100%;
+    max-width: 200px;
+    margin: 0.5rem auto;
+  }
+} 

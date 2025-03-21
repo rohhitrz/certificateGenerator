@@ -1,0 +1,104 @@
+{
+  "en": {
+    "translation": {
+      "app": {
+        "title": "Certificate Generator",
+        "description": "Create beautiful certificates with custom templates"
+      },
+      "form": {
+        "studentName": "Student Name",
+        "studentNamePlaceholder": "Enter student name",
+        "courseTitle": "Course Title",
+        "courseTitlePlaceholder": "Enter course title",
+        "duration": "Duration",
+        "durationPlaceholder": "Enter course duration (Optional)",
+        "mentorName": "Mentor Name",
+        "mentorNamePlaceholder": "Enter mentor name",
+        "mentorSignature": "Mentor Signature",
+        "mentorSignatureHelp": "Upload an image for signature (Optional)",
+        "organizationLogo": "Organization Logo",
+        "organizationLogoHelp": "Upload organization logo (Optional)",
+        "required": "Required field",
+        "generate": "Generate Certificate",
+        "reset": "Reset Form"
+      },
+      "certificate": {
+        "template": "Certificate Template",
+        "template1": "Classic Template",
+        "template2": "Modern Template",
+        "certificateOf": "Certificate of Completion",
+        "issuedTo": "This is to certify that",
+        "hasCompleted": "has successfully completed the course",
+        "duration": "Duration",
+        "issuedOn": "Issued on",
+        "mentorSignature": "Mentor Signature",
+        "downloadAsPdf": "Download as PDF",
+        "downloadAsPng": "Download as PNG"
+      },
+      "theme": {
+        "light": "Light Mode",
+        "dark": "Dark Mode"
+      },
+      "language": {
+        "en": "English",
+        "hi": "Hindi"
+      },
+      "validation": {
+        "required": "This field is required",
+        "fileSize": "File size too large",
+        "fileType": "Unsupported file type"
+      }
+    }
+  },
+  "hi": {
+    "translation": {
+      "app": {
+        "title": "प्रमाणपत्र जनरेटर",
+        "description": "कस्टम टेम्पलेट्स के साथ सुंदर प्रमाणपत्र बनाएं"
+      },
+      "form": {
+        "studentName": "विद्यार्थी का नाम",
+        "studentNamePlaceholder": "विद्यार्थी का नाम दर्ज करें",
+        "courseTitle": "पाठ्यक्रम का शीर्षक",
+        "courseTitlePlaceholder": "पाठ्यक्रम का शीर्षक दर्ज करें",
+        "duration": "अवधि",
+        "durationPlaceholder": "पाठ्यक्रम की अवधि दर्ज करें (वैकल्पिक)",
+        "mentorName": "मेंटर का नाम",
+        "mentorNamePlaceholder": "मेंटर का नाम दर्ज करें",
+        "mentorSignature": "मेंटर हस्ताक्षर",
+        "mentorSignatureHelp": "हस्ताक्षर के लिए एक छवि अपलोड करें (वैकल्पिक)",
+        "organizationLogo": "संगठन का लोगो",
+        "organizationLogoHelp": "संगठन का लोगो अपलोड करें (वैकल्पिक)",
+        "required": "आवश्यक क्षेत्र",
+        "generate": "प्रमाणपत्र बनाएं",
+        "reset": "फॉर्म रीसेट करें"
+      },
+      "certificate": {
+        "template": "प्रमाणपत्र टेम्पलेट",
+        "template1": "क्लासिक टेम्पलेट",
+        "template2": "आधुनिक टेम्पलेट",
+        "certificateOf": "पूर्णता का प्रमाणपत्र",
+        "issuedTo": "यह प्रमाणित किया जाता है कि",
+        "hasCompleted": "ने सफलतापूर्वक पाठ्यक्रम पूरा किया है",
+        "duration": "अवधि",
+        "issuedOn": "जारी किया गया",
+        "mentorSignature": "मेंटर हस्ताक्षर",
+        "downloadAsPdf": "PDF के रूप में डाउनलोड करें",
+        "downloadAsPng": "PNG के रूप में डाउनलोड करें"
+      },
+      "theme": {
+        "light": "लाइट मोड",
+        "dark": "डार्क मोड"
+      },
+      "language": {
+        "en": "अंग्रे़ी",
+        "hi": "हिंदी"
+      },
+      "validation": {
+        "required": "यह फ़ील्ड आवश्यक है",
+        "fileSize": "फ़ाइल का आकार बहुत बड़ा है",
+        "fileType": "असमर्थित फ़ाइल प्रकार"
+      }
+    }
+  }
+} 

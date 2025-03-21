@@ -1,0 +1,269 @@
+.certificateContainer {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.01);
+  }
+}
+
+.downloadButtons {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  
+  button {
+    flex: 1;
+  }
+}
+
+// Template 1 - Classic Style
+.template1 {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.4 / 1;
+  background-color: #fff;
+  border: 10px double #8a6d3b;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Georgia', serif;
+  
+  .logo {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    max-width: 100px;
+    max-height: 100px;
+  }
+  
+  .title {
+    margin-top: 1.5rem;
+    color: #8a6d3b;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .studentName {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    border-bottom: 2px solid #8a6d3b;
+    padding-bottom: 0.5rem;
+  }
+  
+  .courseTitle {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  
+  .duration {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 2rem;
+  }
+  
+  .date {
+    margin: 1.5rem 0;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .signature {
+    margin-top: 1rem;
+    
+    img {
+      max-width: 150px;
+      max-height: 80px;
+    }
+    
+    .mentorName {
+      margin-top: 0.5rem;
+      font-weight: bold;
+      color: #333;
+    }
+    
+    .mentorTitle {
+      font-size: 0.9rem;
+      color: #777;
+    }
+  }
+  
+  .qrCode {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+}
+
+// Template 2 - Modern Style
+.template2 {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.4 / 1;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background: linear-gradient(90deg, #3498db, #2ecc71);
+    z-index: 1;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    max-width: 120px;
+    max-height: 120px;
+  }
+  
+  .title {
+    font-size: 2.2rem;
+    color: #3498db;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2.5rem;
+  }
+  
+  .content {
+    text-align: left;
+    padding-left: 2rem;
+  }
+  
+  .studentLabel {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 0.25rem;
+  }
+  
+  .studentName {
+    font-size: 2.2rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+  
+  .courseLabel {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 0.25rem;
+  }
+  
+  .courseTitle {
+    font-size: 1.5rem;
+    color: #2ecc71;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .duration {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .date {
+    display: inline-block;
+    margin: 1.5rem 0;
+    padding: 0.5rem 1rem;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .signature {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    img {
+      max-width: 150px;
+      max-height: 80px;
+      margin-bottom: 0.5rem;
+    }
+    
+    .mentorName {
+      font-weight: 600;
+      color: #333;
+    }
+    
+    .mentorTitle {
+      font-size: 0.9rem;
+      color: #777;
+    }
+  }
+  
+  .qrCode {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .template1, .template2 {
+    padding: 1.5rem;
+    
+    .title {
+      font-size: 1.8rem;
+    }
+    
+    .studentName {
+      font-size: 1.5rem;
+    }
+    
+    .courseTitle {
+      font-size: 1.2rem;
+    }
+    
+    .logo {
+      max-width: 80px;
+      max-height: 80px;
+    }
+    
+    .qrCode {
+      transform: scale(0.8);
+      transform-origin: bottom right;
+    }
+  }
+  
+  .downloadButtons {
+    flex-direction: column;
+  }
+} 
